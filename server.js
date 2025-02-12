@@ -1,25 +1,16 @@
-const express = require("express");
-const dotenv = require("dotenv");
-dotenv.config();
-
-const app = express();
-const PORT = process.env.PORT || 3000;
-const connectDatabase = require("./database.js");
-
-connectDatabase();
-
-app.get("/", function (req, res) {
-  res.send("Backend server is live!");
-});
-
-app.get("/ping", function (req, res) {
-  res.send("pong");
-});
-
-if (process.env.NODE_ENV !== "test") {
-  app.listen(PORT, function () {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
-}
-
-module.exports = app;
+const express=require('express');
+require('dotenv').config();
+const {connectDB,getConnection}=require('./database');
+const app= express();
+const port =8000;
+app.get('/ping',(req,res)=>{
+    res.send('Pong!');
+})
+connectDB();
+app.get('/',(req,res)=>{
+    console.log("Connected");
+    res.send(getConnection());
+})
+app.listen(port,()=>{
+    console.log(`server is running at http://localhost:${port}`);
+}); 
