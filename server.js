@@ -1,7 +1,9 @@
 const express=require('express');
+const app= express();
+const routes = require('./routes'); 
+app.use(routes)
 require('dotenv').config();
 const {connectDB,getConnection}=require('./database');
-const app= express();
 const port =8000;
 app.get('/ping',(req,res)=>{
     res.send('Pong!');
