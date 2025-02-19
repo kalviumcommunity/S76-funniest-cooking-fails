@@ -1,0 +1,19 @@
+meta {
+  name: put
+  type: http
+  seq: 1
+}
+
+put {
+  url: http://localhost:8000/put/67b578d521a0147a9caee389
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "name": "Brunos",
+      "des": "A passionate chef.",
+      "country": "Italy"
+  }
+}

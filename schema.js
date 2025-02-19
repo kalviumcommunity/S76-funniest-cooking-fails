@@ -7,13 +7,13 @@ const model = new mongoose.Schema({
      des :{
         type: String,
      },
-     dishesfailed :{
-         type:String,
-     },
-     images :{
-         type: Buffer,
+    //  dishesfailed :{
+    //      type:String,
+    //  },
+    //  images :{
+    //      type: Buffer,
 
-     },
+    //  },
      Country :{
          type: String,
      },
