@@ -1,19 +1,20 @@
 meta {
-  name: put
+  name: POST
   type: http
-  seq: 1
+  seq: 3
 }
 
-put {
-  url: http://localhost:8000/put/67b578d521a0147a9caee389
+post {
+  url: http://localhost:8000/post
   body: json
   auth: none
 }
 
 body:json {
   {
-      "name": "Brunos",
+      "name": "Bruno",
       "des": "A passionate chef.",
       "country": "Italy"
   }
+  
 }

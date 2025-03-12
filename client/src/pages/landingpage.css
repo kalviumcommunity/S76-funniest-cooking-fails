@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f94144;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: #f94144;
+  }
+  
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    padding: 100px 0;
+    background-color: #f8f9fa;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #f94144;
+  }
+  
+  .tagline {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #6c757d;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .primary {
+    background-color: #f94144;
+    color: white;
+  }
+  
+  .primary:hover {
+    background-color: #e63946;
+  }
+  
+  .secondary {
+    background-color: white;
+    color: #f94144;
+    border: 2px solid #f94144;
+  }
+  
+  .secondary:hover {
+    background-color: #f8f9fa;
+  }
+  
+  /* Featured Fails */
+  #featured {
+    padding: 80px 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .fail-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .fail-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .fail-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  .fail-placeholder {
+    height: 200px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-weight: bold;
+  }
+  
+  .fail-card h3 {
+    padding: 15px 15px 5px;
+    color: #333;
+  }
+  
+  .fail-card p {
+    padding: 0 15px 15px;
+    color: #6c757d;
+  }
+  
+  .read-more {
+    display: inline-block;
+    margin: 0 15px 15px;
+    color: #f94144;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  /* Submit Section */
+  #submit-fail {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  #submit-fail p {
+    max-width: 600px;
+    margin: 0 auto 30px;
+    color: #6c757d;
+  }
+  
+  .subscribe-form {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  input[type="email"] {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+  }
+  
+  .subscribe-form button {
+    border-radius: 0 4px 4px 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .success-message {
+    padding: 15px;
+    background-color: #d4edda;
+    color: #155724;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  /* Testimonials */
+  #testimonials {
+    padding: 80px 0;
+  }
+  
+  .testimonial-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .testimonial {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .testimonial p {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  cite {
+    font-weight: bold;
+    color: #6c757d;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 50px 0 20px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .footer-section {
+    margin-bottom: 30px;
+    min-width: 200px;
+  }
+  
+  .footer-section h3 {
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+  }
+  
+  .footer-section li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-section a:hover {
+    color: #f94144;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-link {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-link:hover {
+    color: #f94144;
+  }
+  
+  .copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #555;
+    color: #e0e0e0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .subscribe-form {
+      flex-direction: column;
+    }
+    
+    input[type="email"] {
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    
+    .subscribe-form button {
+      border-radius: 4px;
+    }
+    
+    .footer-content {
+      flex-direction: column;
+    }
+  }
